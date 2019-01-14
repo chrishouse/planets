@@ -4,8 +4,7 @@
     box-sizing: border-box;
 }
 
-body{
-    background-image: url('images/bg.jpg');
+body{    
     background-size: cover;
     background-position: center;
 }
@@ -13,15 +12,17 @@ body{
 .panels{
     margin: 0 auto;
     display: flex;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     align-items: center;
 }
 
 .panel{
     color: white;
-    font-size: 34px;
+    font-size: 46px;
+    text-shadow: 3px 3px black;
     text-transform: uppercase;
+    letter-spacing: 5px;
     font-family: arial;
     flex: 1;
     display: flex;
@@ -30,6 +31,41 @@ body{
     height: 100%;
     justify-content: center;
     transition: all .5s;
+    background-position: center;
+    border-left: solid 1px rgb(255, 231, 122);
+    opacity: .8;
+}
+
+.panel1{
+    background-image: url('images/bg.jpg');
+}
+
+.panel2{
+    background-image: url('images/space2.jpg');
+}
+
+.panel3{
+    background-image: url('images/space3.jpg');
+}
+
+.panel4{
+    background-image: url('images/space4.jpg');
+}
+
+.panel5{
+    background-image: url('images/space5.jpg');
+}
+
+.panel6{
+    background-image: url('images/space6.jpg');
+}
+
+.panel7{
+    background-image: url('images/space7.jpg');
+}
+
+.panel8{
+    background-image: url('images/space8.jpg');
 }
 
 .panel > *{
@@ -39,8 +75,9 @@ body{
 }
 
 .name{
-    transition: transform .5s;
+    transition: transform .3s;
     transform: translateY(-100%);
+    align-items: flex-end;
 }
 
 .panel-open-active .name{
@@ -48,14 +85,15 @@ body{
 }
 
 .panel-active{
-    flex: 3;
-    background-color: rgba(0, 0, 0, .75);
+    flex: 5;
+    opacity: 1;
 }
 
 .panel img{
     max-width: 100%;
     transform: scale(.5);
     transition: all .5s;
+    max-width: 100%;
 }
 
 .panel-active img{
