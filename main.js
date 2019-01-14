@@ -1,8 +1,12 @@
 const panel = document.querySelectorAll('.panel');
 
-function showPanel() {
-    panel.forEach(panel => panel.classList.remove('panel-active'));
-    this.classList.toggle('panel-active');
+function showPanel() {    
+    if (this.classList.contains('panel-active')) {
+        this.classList.remove('panel-active'); 
+    } else {
+        panel.forEach(panel => panel.classList.remove('panel-active'));
+        this.classList.add('panel-active');
+    }
 }
 
 function showName(e) {
